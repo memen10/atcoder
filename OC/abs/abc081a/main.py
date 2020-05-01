@@ -1,5 +1,5 @@
 
 def main():
-    N = int(input())
+    print(str(input()).count("1"))
 
 main()
