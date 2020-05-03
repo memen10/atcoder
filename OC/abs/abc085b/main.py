@@ -1,5 +1,1 @@
-
-def main():
-    N = int(input())
-
-main()
+a,*b=open(0);print(len(set(b)))
