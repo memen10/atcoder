@@ -1,12 +1,12 @@
 import sys
+import numpy as np
+import itertools
+
 input = lambda: sys.stdin.readline().strip()
 
 read = sys.stdin.buffer.read
 readline = sys.stdin.buffer.readline
 readlines = sys.stdin.buffer.readlines
-
-import numpy as np
-import itertools
 
 def main():
     N, M, Q = map(int, readline().split())
