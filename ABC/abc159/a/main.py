@@ -8,7 +8,9 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    N = I()
-    A = [LI() for _ in range(N)]
+    N,M = LI()
+    even_num = N*(N-1)/2    #NC2
+    odd_num = M*(M-1)/2     #MC2
+    print(int(even_num + odd_num))
 
 main()
