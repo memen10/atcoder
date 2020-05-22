@@ -7,20 +7,13 @@ def I(): return int(sys.stdin.readline().rstrip())
 def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
-def comb(n):
-    return int(n*(n-1)/2)
-
 def main():
-    N = I()
-    A_list = LI()
-    A_ctr = collections.Counter(A_list)
-    base = 0
-    for i in range(1,N+1):
-        base += comb(A_ctr[i])
-    for i in range(1,N+1):
-        i_val = A_ctr[A_list[i-1]]
-        before = comb(i_val)
-        after = comb(i_val-1)
-        print(int(base - before + after))
+    N,A,B = LI()
+    ans = 0
+    n_ab = int(N/(A+B))
+    amari = N-n_ab*(A+B)
+    ans = n_ab*A+A if amari >= A else n_ab*A+amari
+    print(ans)
 
 main()
+
