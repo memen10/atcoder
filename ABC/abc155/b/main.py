@@ -9,12 +9,10 @@ def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
     N = I()
-    X = LI()
-    energy = [0 for _ in range(1,100)]
-    for p in range(1,100):
-        for x in X:
-            energy[p-1] += (x-p)**2
-    print(min(energy))
+    A = numpy.array(LI())
+    A_mod2 = A[A%2==0]
+    is_approved = ((A_mod2%3==0)|(A_mod2%5==0)).all(axis=0)
+    print("APPROVED" if is_approved else "DENIED")
 
 main()
 

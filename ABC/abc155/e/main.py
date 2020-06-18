@@ -9,12 +9,7 @@ def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
     N = I()
-    X = LI()
-    energy = [0 for _ in range(1,100)]
-    for p in range(1,100):
-        for x in X:
-            energy[p-1] += (x-p)**2
-    print(min(energy))
+    A = [LI() for _ in range(N)]
 
 main()
 

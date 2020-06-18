@@ -8,13 +8,8 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    N = I()
-    X = LI()
-    energy = [0 for _ in range(1,100)]
-    for p in range(1,100):
-        for x in X:
-            energy[p-1] += (x-p)**2
-    print(min(energy))
+    A,B,C = LI()
+    print("Yes" if ((A==B and B!=C) or (B==C and C!=A) or (C==A and A!=B)) else "No")
 
 main()
 
