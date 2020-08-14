@@ -27,7 +27,3 @@ acc submit  # to use submit function, you have to install online-judge-tools
 ```
 alias ojt-py='oj t -c "python3 main.py"'
 ```
-
-
-online-judge-tools-9.2.2
-atcoder-cli-2.0.5
