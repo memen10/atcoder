@@ -9,15 +9,7 @@ def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
     N = I()
-    P = LI()
-    ans = 0
-    min_num = P[0]
-    for i in range(N):
-        if min_num>=P[i]:
-            ans += 1
-            min_num = P[i]
-
-    print(ans)
+    A = [LI() for _ in range(N)]
 
 main()
 

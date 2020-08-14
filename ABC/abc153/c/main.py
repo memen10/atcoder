@@ -8,8 +8,11 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    N = I()
-    A = [LI() for _ in range(N)]
+    N,K = LI()
+    H = sorted(LI(),reverse=True)
+    H_removed = H[K:]
+    print(sum(H_removed))
+
 
 main()
 

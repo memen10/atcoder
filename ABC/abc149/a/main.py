@@ -8,16 +8,8 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    N = I()
-    P = LI()
-    ans = 0
-    min_num = P[0]
-    for i in range(N):
-        if min_num>=P[i]:
-            ans += 1
-            min_num = P[i]
-
-    print(ans)
+    S,T = LS()
+    print(T+S)
 
 main()
 
