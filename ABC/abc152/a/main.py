@@ -8,9 +8,8 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    H, N = LI()
-    A = LI()
-    print("Yes" if H<=sum(A) else "No")
+    N,M = LI()
+    print("Yes" if N==M else "No")
 
 main()
 

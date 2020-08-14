@@ -8,9 +8,10 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    H, N = LI()
-    A = LI()
-    print("Yes" if H<=sum(A) else "No")
+    a,b = LI()
+    a_b = str(a)*b
+    b_a = str(b)*a
+    print(sorted([a_b,b_a])[0])
 
 main()
 
