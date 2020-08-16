@@ -9,7 +9,13 @@ def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
     N = I()
-    A = [LI() for _ in range(N)]
+    S,T = LS()
+    ans = ""
+    for i in range(N):
+        ans += S[i]
+        ans += T[i]
+    print(ans)
+
 
 main()
 

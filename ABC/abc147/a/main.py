@@ -8,9 +8,8 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    A = I()
-    B = I()
-    print(6-(A+B))
+    A = LI()
+    print("bust" if sum(A)>=22 else "win")
 
 main()
 

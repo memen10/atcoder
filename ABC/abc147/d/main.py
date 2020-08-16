@@ -8,9 +8,8 @@ def LI(): return list(map(int,sys.stdin.readline().rstrip().split()))
 def LS(): return list(sys.stdin.readline().rstrip().split())
 
 def main():
-    A = I()
-    B = I()
-    print(6-(A+B))
+    N = I()
+    A = [LI() for _ in range(N)]
 
 main()
 
